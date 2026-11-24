@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nipuni Lelwala | Medical Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-medical-200 selection:text-medical-900">    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <a href="index.html" class="flex items-center space-x-3"><div class="w-10 h-10 rounded-xl bg-medical-600 text-white flex items-center justify-center"><i class="fa-solid fa-stethoscope"></i></div><span class="text-lg font-bold text-slate-900">Dr. Nipuni Lelwala</span></a>
+            <a href="index.html" class="text-sm font-semibold text-slate-600 hover:text-medical-700">Portfolio</a>
+        </div>
+    </header>
+    <main class="min-h-[75vh] py-16 bg-slate-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-wrap items-center justify-between gap-4 mb-8">
+                <a href="index.html" class="inline-flex items-center space-x-2 text-sm font-semibold text-medical-700"><i class="fa-solid fa-arrow-left"></i><span id="article-back-label">Back</span></a>
+                <a id="article-archive-btn" href="medical-writing.html" class="inline-flex items-center space-x-2 px-4 py-2 rounded-xl bg-white text-slate-700 text-xs font-semibold border border-slate-200"><span id="article-archive-label">View All</span><i class="fa-solid fa-layer-group text-xs"></i></a>
+            </div>
+            <article class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200/80">
+                <div class="flex flex-wrap items-center gap-3 mb-5"><span id="article-badge" class="text-xs font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full bg-medical-50 text-medical-700 border border-medical-100">Category</span><span id="article-meta" class="text-xs font-medium text-slate-500">Venue &bull; Year</span></div>
+                <h1 id="article-title" class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 leading-tight">Article Title</h1>
+                <div class="mt-6 pt-6 border-t border-slate-100 flex items-center space-x-3"><div class="w-10 h-10 rounded-full bg-medical-600 text-white flex items-center justify-center"><i class="fa-solid fa-user-doctor text-sm"></i></div><div><p class="text-sm font-semibold text-slate-900">Dr. Nipuni Lelwala</p><p class="text-xs text-slate-500">MBBS &bull; Manipal College of Medical Sciences, Nepal</p></div></div>
+                <div id="article-summary-box" class="mt-8 p-5 rounded-2xl bg-medical-50/70 border border-medical-100 text-slate-700 text-sm sm:text-base leading-relaxed"></div>
+                <div id="article-body" class="mt-8 space-y-5 text-slate-700 text-base leading-relaxed"></div>
+            </article>
+        </div>
+    </main>
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+            <p>&copy; <span id="year"></span> Dr. Nipuni Lelwala. All rights reserved.</p>
+            <p class="text-xs text-slate-400">MBBS &bull; Manipal College of Medical Sciences, Nepal</p>
+        </div>
+    </footer>
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-slate-900 text-white px-5 py-3.5 rounded-2xl shadow-xl flex items-center space-x-3 text-sm">
+            <i class="fa-solid fa-circle-check text-medical-400 text-base"></i>
+            <span id="toast-message">Notification message</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

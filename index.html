@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nipuni Lelwala | Medical Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind-config.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased selection:bg-medical-200 selection:text-medical-900">
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200/80 transition-all">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Brand / Logo -->
+                <a href="index.html" class="flex items-center space-x-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-medical-600 text-white flex items-center justify-center shadow-sm group-hover:bg-medical-700 transition">
+                        <i class="fa-solid fa-stethoscope text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-lg font-bold text-slate-900 tracking-tight">Dr. Nipuni Lelwala</span>
+                        <span class="block text-xs font-medium text-medical-600 uppercase tracking-wider">Medical Doctor (MBBS)</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex items-center space-x-7">
+                    <a href="index.html#about"  class="text-sm font-medium text-slate-600 hover:text-medical-600 transition">About</a>
+                    <a href="index.html#education"  class="text-sm font-medium text-slate-600 hover:text-medical-600 transition">Education</a>
+                    <a href="index.html#experience"  class="text-sm font-medium text-slate-600 hover:text-medical-600 transition">Training</a>
+                    <a href="index.html#research"  class="text-sm font-medium text-slate-600 hover:text-medical-600 transition">Research</a>
+                    <a href="index.html#medical-writing"  class="text-sm font-medium text-slate-600 hover:text-medical-600 transition">Medical Writing</a>
+                    <a href="index.html#contact"  class="px-5 py-2.5 rounded-xl bg-medical-600 text-white text-sm font-medium hover:bg-medical-700 shadow-sm hover:shadow transition">
+                        Contact
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" aria-label="Toggle Menu" class="md:hidden p-2.5 rounded-xl text-slate-600 hover:bg-slate-100 focus:outline-none">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-2 shadow-lg">
+            <a href="index.html#about"  class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-700">About</a>
+            <a href="index.html#education"  class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-700">Education</a>
+            <a href="index.html#experience"  class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-700">Clinical Training</a>
+            <a href="index.html#research"  class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-700">Research & Publications</a>
+            <a href="index.html#medical-writing"  class="mobile-link block px-4 py-3 rounded-xl text-base font-medium text-slate-700 hover:bg-medical-50 hover:text-medical-700">Medical Writing</a>
+            <a href="index.html#contact"  class="mobile-link block px-4 py-3 rounded-xl text-base font-medium bg-medical-600 text-white text-center mt-4">Contact</a>
+        </div>
+    </header>
+
+    <!-- MAIN PORTFOLIO VIEW -->
+    
+<main id="main-view">
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-b from-medical-50/70 via-white to-slate-50 pt-12 pb-20 lg:pt-20 lg:pb-28">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Left Text Column -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-medical-100/80 text-medical-800 text-xs font-semibold tracking-wide">
+                        <span class="w-2 h-2 rounded-full bg-medical-600 animate-pulse"></span>
+                        <span>MBBS Graduate • Compassionate Patient Care</span>
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 tracking-tight leading-tight">
+                        Dr. Nipuni Lelwala
+                    </h1>
+
+                    <p class="text-lg sm:text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                        Dedicated Medical Doctor and alumnus of <span class="font-semibold text-slate-800">Manipal College of Medical Sciences (MCOMS), Nepal</span>. Committed to evidence-based medicine, holistic patient care, and continuous clinical excellence.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-medical-600 text-white font-semibold hover:bg-medical-700 shadow-md hover:shadow-lg transition flex items-center justify-center space-x-2">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Contact Details</span>
+                        </a>
+                        <a href="#research" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-white text-slate-700 font-semibold border border-slate-200 hover:border-medical-300 hover:bg-medical-50/50 transition flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-microscope text-medical-600"></i>
+                            <span>Research & Medical Writing</span>
+                        </a>
+                    </div>
+
+                    <!-- Quick Highlights -->
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-slate-200/80 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <p class="text-2xl font-bold text-medical-700">MBBS</p>
+                            <p class="text-xs text-slate-500 mt-0.5">Medical Degree</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-medical-700">MCOMS</p>
+                            <p class="text-xs text-slate-500 mt-0.5">Pokhara, Nepal</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-bold text-medical-700">100%</p>
+                            <p class="text-xs text-slate-500 mt-0.5">Patient-Centered</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Profile Card Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <!-- Decorative Backdrop -->
+                        <div class="absolute -inset-3 bg-gradient-to-tr from-medical-200 to-teal-100 rounded-3xl transform rotate-2 opacity-60"></div>
+                        
+                        <div class="relative bg-white p-6 rounded-3xl shadow-xl border border-slate-100">
+                            <div class="aspect-[4/4] w-full rounded-2xl overflow-hidden bg-slate-100 mb-5 relative">
+                                <img 
+                                    src="https://placehold.co/600x600/0f766e/ffffff?text=Dr.+Nipuni+Lelwala" 
+                                    onerror="this.src='https://placehold.co/600x600/115e59/ffffff?text=Dr.+Nipuni'" 
+                                    alt="Dr. Nipuni Lelwala Portrait" 
+                                    class="w-full h-full object-cover"
+                                >
+                                <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-sm flex items-center justify-between">
+                                    <div>
+                                        <p class="text-xs font-semibold text-slate-900">Manipal College of Medical Sciences</p>
+                                        <p class="text-[11px] text-slate-500">Kathmandu University Affiliated</p>
+                                    </div>
+                                    <i class="fa-solid fa-award text-medical-600 text-lg"></i>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center justify-between text-sm text-slate-600 px-1">
+                                <span class="flex items-center space-x-2">
+                                    <i class="fa-solid fa-user-doctor text-medical-600"></i>
+                                    <span>General Medicine & Clinical Care</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-medical-600">About Me</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Dedicated to Empathy, Precision & Healing</h2>
+                <div class="w-16 h-1 bg-medical-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                <div class="md:col-span-7 space-y-5 text-slate-600 leading-relaxed text-base sm:text-lg">
+                    <p>
+                        Hello! I am <strong class="text-slate-900">Dr. Nipuni Lelwala</strong>, a medical graduate from the prestigious <strong class="text-slate-900">Manipal College of Medical Sciences (MCOMS)</strong> in Pokhara, Nepal. My medical education provided me with rigorous clinical exposure across diverse patient demographics, fostering strong diagnostic acumen and adaptability in high-pressure healthcare environments.
+                    </p>
+                    <p>
+                        I believe that effective medical practice bridges scientific rigor with genuine human connection. Whether managing acute cases in hospital wards or counseling patients on preventive health, my priority is ensuring every individual feels heard, respected, and actively involved in their care journey.
+                    </p>
+                </div>
+
+                <div class="md:col-span-5 grid grid-cols-1 gap-4">
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex items-start space-x-4">
+                        <div class="w-11 h-11 rounded-xl bg-medical-100 text-medical-700 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-heart-pulse text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900">Holistic Approach</h3>
+                            <p class="text-sm text-slate-600 mt-1">Treating the whole person rather than just isolated symptoms, integrating physical and mental well-being.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded-2xl bg-slate-50 border border-slate-100 flex items-start space-x-4">
+                        <div class="w-11 h-11 rounded-xl bg-medical-100 text-medical-700 flex items-center justify-center shrink-0">
+                            <i class="fa-solid fa-microscope text-lg"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-slate-900">Evidence-Based Practice</h3>
+                            <p class="text-sm text-slate-600 mt-1">Staying up to date with current clinical guidelines and medical research to deliver safe, effective care.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 bg-slate-50 border-y border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-medical-600">Academic Credentials</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Medical Education</h2>
+                <div class="w-16 h-1 bg-medical-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <!-- Primary Medical Degree Card -->
+                <div class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-slate-200/80 relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-medical-50 rounded-bl-full -z-0"></div>
+                    
+                    <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-slate-100">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-14 h-14 rounded-2xl bg-medical-600 text-white flex items-center justify-center shrink-0 shadow-sm">
+                                <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl sm:text-2xl font-bold text-slate-900">Bachelor of Medicine, Bachelor of Surgery (MBBS)</h3>
+                                <p class="text-medical-700 font-semibold text-base mt-1">Manipal College of Medical Sciences (MCOMS), Nepal</p>
+                                <p class="text-sm text-slate-500 mt-0.5">Affiliated with Kathmandu University • Pokhara, Nepal</p>
+                            </div>
+                        </div>
+                        <span class="inline-flex items-center px-4 py-1.5 rounded-xl bg-medical-50 text-medical-700 text-sm font-semibold self-start md:self-center">
+                            Graduate
+                        </span>
+                    </div>
+
+                    <div class="relative z-10 pt-6 space-y-4 text-slate-600">
+                        <p class="leading-relaxed">
+                            Completed comprehensive preclinical, paraclinical, and clinical training at Manipal Teaching Hospital (750-bed tertiary care hospital). Gained extensive hands-on experience in inpatient ward management, outpatient consultations, emergency triage, and community health outreach programs.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                            <div class="flex items-center space-x-2.5 text-sm text-slate-700">
+                                <i class="fa-solid fa-circle-check text-medical-600"></i>
+                                <span>Clinical Rotations in Internal Medicine & Surgery</span>
+                            </div>
+                            <div class="flex items-center space-x-2.5 text-sm text-slate-700">
+                                <i class="fa-solid fa-circle-check text-medical-600"></i>
+                                <span>Pediatrics, Obstetrics & Gynecology Training</span>
+                            </div>
+                            <div class="flex items-center space-x-2.5 text-sm text-slate-700">
+                                <i class="fa-solid fa-circle-check text-medical-600"></i>
+                                <span>Emergency & Critical Care Exposure</span>
+                            </div>
+                            <div class="flex items-center space-x-2.5 text-sm text-slate-700">
+                                <i class="fa-solid fa-circle-check text-medical-600"></i>
+                                <span>Community Medicine & Rural Health Camps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Experience & Rotations Section -->
+    <section id="experience" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-medical-600">Clinical Background</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Medical Training & Rotations</h2>
+                <div class="w-16 h-1 bg-medical-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Dynamic Flex Grid Container (Handles any number of items cleanly) -->
+            <div id="training-container" class="flex flex-wrap justify-center gap-8"></div>
+
+        </div>
+    </section>
+
+    <!-- Research & Publications Section -->
+    <section id="research" class="py-20 bg-white border-t border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-medical-600">Academic Contributions</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Research & Publications</h2>
+                <div class="w-16 h-1 bg-medical-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Dynamic Flex Grid Container -->
+            <div id="research-container" class="flex flex-wrap justify-center gap-8"></div>
+
+            <!-- View Full Archive Button -->
+            <div class="mt-12 text-center">
+                <a href="research.html" class="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-white text-medical-700 font-semibold text-sm border border-medical-200 hover:bg-medical-50 hover:border-medical-300 shadow-sm transition">
+                    <span>View Full Research & Publications Archive</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Medical Writing Section -->
+    <section id="medical-writing" class="py-20 bg-slate-50 border-t border-slate-200/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-medical-600">Written Healthcare Work</span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Medical Writing</h2>
+                <div class="w-16 h-1 bg-medical-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Dynamic Flex Grid Container -->
+            <div id="projects-container" class="flex flex-wrap justify-center gap-8"></div>
+
+            <!-- View Full Archive Button -->
+            <div class="mt-12 text-center">
+                <a href="medical-writing.html" class="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-white text-medical-700 font-semibold text-sm border border-medical-200 hover:bg-medical-50 hover:border-medical-300 shadow-sm transition">
+                    <span>View Full Medical Writing Archive</span>
+                    <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Clinical Competencies -->
+    <section id="expertise" class="py-20 bg-medical-900 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl mx-auto text-center mb-14">
+                <span class="text-xs font-bold uppercase tracking-widest text-medical-200">Skills & Strengths</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mt-2">Core Clinical Competencies</h2>
+                <div class="w-16 h-1 bg-medical-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                    <i class="fa-solid fa-notes-medical text-medical-300 text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-lg">Clinical Diagnosis</h3>
+                    <p class="text-sm text-medical-100/80 mt-2">Systematic history taking, physical examination, and differential diagnosis formulation.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                    <i class="fa-solid fa-kit-medical text-medical-300 text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-lg">Procedural Skills</h3>
+                    <p class="text-sm text-medical-100/80 mt-2">IV cannulation, phlebotomy, catheterization, wound suturing, and basic life support (BLS).</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                    <i class="fa-solid fa-comments text-medical-300 text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-lg">Patient Counseling</h3>
+                    <p class="text-sm text-medical-100/80 mt-2">Empathetic communication, preventive health education, and clear explanation of care plans.</p>
+                </div>
+
+                <div class="bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-6">
+                    <i class="fa-solid fa-people-group text-medical-300 text-2xl mb-4"></i>
+                    <h3 class="font-semibold text-lg">Team Collaboration</h3>
+                    <p class="text-sm text-medical-100/80 mt-2">Seamless coordination with specialists, nursing staff, and allied healthcare professionals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Static Contact Section (No Backend Required) -->
+    <section id="contact" class="py-20 bg-slate-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-medical-700 text-white rounded-3xl shadow-md p-8 sm:p-12 relative overflow-hidden">
+                <div class="absolute -right-12 -bottom-12 w-56 h-56 rounded-full bg-white/5 pointer-events-none"></div>
+                <div class="relative z-10 text-center max-w-2xl mx-auto">
+                    <span class="text-xs font-bold uppercase tracking-widest text-medical-200">Connect</span>
+                    <h2 class="text-2xl sm:text-3xl font-bold mt-2">Contact Dr. Nipuni Lelwala</h2>
+                    <p class="text-medical-100 text-sm sm:text-base mt-3 leading-relaxed">
+                        Available for clinical opportunities, medical collaborations, academic inquiries, and professional networking. Feel free to reach out directly via email or professional networks.
+                    </p>
+                </div>
+
+                <div class="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-5 mt-10">
+                    <!-- Email Card -->
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-5 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center mb-3">
+                                <i class="fa-regular fa-envelope text-medical-200 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-medical-200 uppercase tracking-wider font-semibold">Direct Email</p>
+                            <p id="email-text" class="text-sm font-medium mt-1 break-all">dr.nipuni.lelwala@example.com</p>
+                        </div>
+                        <div class="mt-4 flex items-center gap-2">
+                            <a href="mailto:dr.nipuni.lelwala@example.com" class="px-3 py-1.5 rounded-lg bg-white text-medical-800 text-xs font-semibold hover:bg-medical-50 transition">
+                                Mail App
+                            </a>
+                            <button type="button" onclick="copyEmail()" class="px-3 py-1.5 rounded-lg bg-white/15 hover:bg-white/25 text-xs font-medium transition flex items-center space-x-1.5">
+                                <i class="fa-regular fa-copy"></i>
+                                <span>Copy</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Alma Mater Card -->
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-5">
+                        <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center mb-3">
+                            <i class="fa-solid fa-graduation-cap text-medical-200 text-lg"></i>
+                        </div>
+                        <p class="text-xs text-medical-200 uppercase tracking-wider font-semibold">Alma Mater</p>
+                        <p class="text-sm font-medium mt-1">Manipal College of Medical Sciences (MCOMS)</p>
+                        <p class="text-xs text-medical-200 mt-1">Pokhara, Nepal</p>
+                    </div>
+
+                    <!-- Professional Profiles Card -->
+                    <div class="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-5 flex flex-col justify-between">
+                        <div>
+                            <div class="w-10 h-10 rounded-xl bg-white/15 flex items-center justify-center mb-3">
+                                <i class="fa-solid fa-globe text-medical-200 text-lg"></i>
+                            </div>
+                            <p class="text-xs text-medical-200 uppercase tracking-wider font-semibold">Academic & Social</p>
+                            <p class="text-sm font-medium mt-1">Professional Networks</p>
+                        </div>
+                        <div class="mt-4 flex items-center space-x-2.5">
+                            <a href="#contact" onclick="showToast('Add your LinkedIn profile URL in the HTML link!')" aria-label="LinkedIn" class="px-3 py-1.5 rounded-lg bg-white/15 hover:bg-white/25 text-xs font-medium transition flex items-center space-x-1.5">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#contact" onclick="showToast('Add your ResearchGate or ORCID URL in the HTML link!')" aria-label="ResearchGate" class="px-3 py-1.5 rounded-lg bg-white/15 hover:bg-white/25 text-xs font-medium transition flex items-center space-x-1.5">
+                                <i class="fa-solid fa-book-medical"></i>
+                                <span>ORCID</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="bg-white border-t border-slate-200 py-8">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+            <p>&copy; <span id="year"></span> Dr. Nipuni Lelwala. All rights reserved.</p>
+            <p class="text-xs text-slate-400">MBBS &bull; Manipal College of Medical Sciences, Nepal</p>
+        </div>
+    </footer>
+    <div id="toast" class="fixed bottom-5 right-5 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-slate-900 text-white px-5 py-3.5 rounded-2xl shadow-xl flex items-center space-x-3 text-sm">
+            <i class="fa-solid fa-circle-check text-medical-400 text-base"></i>
+            <span id="toast-message">Notification message</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
